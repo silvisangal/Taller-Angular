@@ -1,0 +1,42 @@
+<div class = "container">
+  <div class = "row">
+      <div class = "col">
+        <table class = "table">
+          <thead class="thead-light">
+            <tr>
+              <th class="h4">#</th>
+              <th class="h4" >Series Name</th>
+              <th class="h4">Channel</th>
+              <th class="h4">Seasons</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor = "let s of series">
+              <td>
+                <dd>{{s.id}}</dd>
+              </td>
+              <td>
+                <dd >{{s.name}}</dd>
+              </td>
+              <td>
+                <dd>{{s.channel}}</dd>
+              </td>
+              <td>
+                <dd>{{s.seasons}}</dd>
+              </td>
+            </tr>
+          </tbody>
+      </table>
+      <p>The average is {{average}}</p>
+  </div>
+
+
+  <div class = "card" style="width: 18rem;" *ngIf = "selectedSeries">
+      <div class = "card-header">
+          <h5 id = "cardTitle" class = "card-title"></h5>
+      </div>
+      <div class = "card-body">
+          <div id = "cardText" class = "card-text"></div>
+      </div>
+  </div>
+</div>
