@@ -11,7 +11,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr *ngFor = "let s of series">
+            <tr *ngFor = "let s of series" (click)="onClick()">
               <td>
                 <dd>{{s.id}}</dd>
               </td>

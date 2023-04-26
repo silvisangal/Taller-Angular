@@ -21,6 +21,10 @@ export class SerieComponent implements OnInit {
     });
   }
 
+  onClick() {
+    console.log("Has clickeado la serie");
+  }
+
   constructor(private serieService: SerieService) {}
 
 
@@ -31,8 +35,3 @@ export class SerieComponent implements OnInit {
 
 }
 
-export class ClickableButtonComponent {
-  onClick() {
-    // perform desired action
-  }
-}
